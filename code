@@ -1,0 +1,21 @@
+import random   
+
+
+breakfast = ["pancakes", "waffles", "breakfast burritos", "scrambled eggs", "muffins", "bagels", "oatmeal", "Cream of Wheat", "scones", "cinnamon rolls", "french toast", "homemade donuts", "English muffins", "yogurt", "omelets", "granola bars", "fruit smoothies", "biscuits", "gravy", "boiled egg", "bread pudding", "breakfast cereal", "breakfast sausage", "cereal", "Danish", "doughnut", "egg sandwich", "Eggs Benedict", "energy bar", "fried egg", "frittata", "fritter", "fruit", "fruit salad", "grilled cheese", "grits", "ham", "hash browns", "home fries", "instant breakfast", "kolache", "McMuffin", "muesli", "orange", "Poached egg", "Pop-Tarts", "Quiche", "raisin bread", "steak and eggs", "sticky bun", "strata", "toast", "toaster pastry", "shrimp and grits", "bacon", "croissants", "Shakshuka", "tuna sandwich", "chia pudding", "avocado toast"]
+lunch = ["Grilled cheese", "pizza rolls", "calzones", "frozen pizza", "quesadillas", "mac & cheese", "corn dogs", "ramen", "egg salad sandwich", "tuna sandwich", "turkey sandwich", "chicken salad sandwich", "lunch meat sandwich", "peanut butter sandwich", "fish sticks", "grilled chicken Caesar salad", "zesty Italian pasta salad", "butternut squash soup", "roasted vegetable pasta", "vegetarian quiche", "falafel sandwich", "salmon sandwich", "potato soup", "cucumber tomato feta salad", "quinoa salad with feta", "buffalo chicken salad", "split pea soup", "vegan bowls", "grilled cheese and tomato soup", "garden vegetable soup with pesto", "wilted spinach salad", "raw wraps", "rice paper summer rolls", "onion tart", "salmon poke bowl", "portobello mushroom sandwich", "chicken pesto sandwich", "white bean and kale soup", "tacos", "grain bowl", "dal tadka", "black eyed pea soup", "sushi cupcakes", "pumpkin curry soup", "Hawaiian mac salad", "lentil tabbouleh", "shrimp fajitas", "birria ramen", "margherita flatbread", "rice porridge", "ribeye steak sandwich", "vegan pasta salad", "wild mushroom risotto", "meatball and tomato soup", "Mexican bean soup", "orzo and tomato soup", "carrot and lentil soup", "curried squash lentil and coconut soup", "courgette pea and pesto soup", "lentil salad with tahini dressing", "chicken satay salad", "avocado panzanella", "epic summer salad", "green goddess chicken salad", "guacamole and mango salad with black beans", "miso brown rice and broccoli salad", "beetroot hummus and crispy chickpea sandwich", "rice paper wraps", "green club sandwich", "healthy tuna lettuce wraps", "hummus rainbow wraps", "falafel wrap", "veggie olive wrap", "roasted chickpea wraps", "prawn and grain poke bowls", "chicken hummus bowl", "sesame and ginger sushi bowl", "peanut butter chicken rice bowl", "burrito bowl", "bulgur and quinoa lunch bowls", "creamy pesto and kale pasta", "ratatouille pasta salad", "Mexican penne with avocado", "salmon pasta salad", "pesto pasta salad", "tomato courgette and prawn pasta", "asparagus and lemon spaghetti with peas", "charred broccoli lemon and walnut pasta"]
+dinner = ["Spaghetti", "Grilled Chicken", "Tacos", "Beef Stir Fry", "Salmon", "Baked Potatoes", "Burgers", "Fried Rice", "Lasagna", "Chicken Alfredo", "Steak", "Shrimp Scampi", "Veggie Curry", "Chicken Soup", "Pizza"]
+
+
+userinput = str(input("please let me know what type of meal you would like to make! options are: breakfast, lunch or dinner, or 'q' to quit! \n"))
+while userinput != "q":
+    if userinput == "breakfast":
+        i = random.randint(0, len(breakfast))
+        print("your item is " + breakfast[i] )
+    if userinput == "lunch":
+        i = random.randint(0, len(lunch))
+        print("your item is " + lunch[i] )
+    if userinput == "dinner":
+        i = random.randint(0, len(dinner))
+        print("your item is " + dinner[i] )
+    userinput = str(input("please let me know what type of meal you would like to make! options are: breakfast, lunch or dinner, or 'q' to quit!\n"))
+
